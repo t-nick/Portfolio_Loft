@@ -1,0 +1,217 @@
+@import 'variables'
+
+body
+  background: url(../img/background.png)
+  color: $main-color
+  font: $font-stack
+  font-size: 15px
+
+.header
+  height: 119px
+  background-color: $main-bgc
+  width: 100%
+  padding-top: 37px
+  border-bottom: 5px solid $main-bgc
+  border-bottom-color: $border
+  position: relative
+
+.soc
+  li
+    margin-right: 20px
+    font-size: 22px
+    text-align: center
+    
+
+    a
+      color: $main-bgc
+      background-color: $img-color
+      height: 47px
+      width: 47px
+      border-radius: 50%
+      display:block
+      padding: 12px
+
+      &:hover
+        background-color: $soc-hover
+
+.border
+  height: 5px
+  width: 100%
+  position: absolute
+  bottom: -10px
+  background: #e7eff3 /* Old browsers */
+  background: -moz-linear-gradient(left, #e7eff3 0%, #1e677b 48%, #1e677b 52%, #e7eff3 100%) /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #e7eff3 0%,#1e677b 48%,#1e677b 52%,#e7eff3 100%) /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #e7eff3 0%,#1e677b 48%,#1e677b 52%,#e7eff3 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3',GradientType=1 ) /* IE6-9 */
+
+.main
+  max-width: 990px
+  margin: 40px auto
+  .container
+    width: 990px
+.sidebar
+  padding-right: 40px
+
+.left-block
+  background-color: $main-bgc
+  border-radius: 5px
+  overflow: hidden
+  li 
+    font-size: 21px
+    a 
+      display: block
+      line-height: 52px
+      color: $left-color
+      height: 75px
+      border-radius: 0
+      padding-left: 25px
+
+      
+      &.active
+        background-color: $main-blue
+        color: $left-color-active
+        
+        &:hover
+          background-color: $main-blue
+          color: $left-color-active
+
+      &:hover
+        color: $left-color-hover
+        background-color: $main-bgc
+        border-bottom: 3px solid $main-blue
+        transition: 0.1s
+    &:last-child a 
+        border-bottom: none
+
+.left-block-contacts
+  margin-top: 20px
+  border-radius: 5px
+  overflow: hidden
+  font-size: 17px
+  li 
+    margin-bottom: 0
+    padding: 15px
+    color: $left-color-active
+
+    &.title
+      padding-left: 20px
+      background-color: $main-blue
+      font-size: 21px
+    &.mail
+      background-color: $mail-color
+    &.tel
+      background-color: $tel-color
+      text-align: center
+    &.skype
+      background-color: $skype-color
+      text-align: center
+    i 
+      padding-right: 15px
+      font-size: 21px
+
+.info
+  background-color: $bg-main
+  margin-bottom: 25px
+  border-radius: 3px
+  overflow: hidden
+  margin-left: -10px
+.title_block
+  color: $title-color
+  font-size: 27px
+  border-bottom: 2px solid $title-color
+  width: 350px
+  padding: 20px
+  margin-bottom: 30px
+.foto
+  height: 170px
+  width: 170px
+  border-radius: 50%
+  border: 5px solid $title-color
+  overflow: hidden
+  margin-top: 33px
+  margin-left: 33px
+.description
+  margin-bottom: 30px
+  width: auto
+  font-family: 'fira_sansbook'
+.name
+  font-family: 'fira_sansmedium'
+  font-size: 17px
+
+.skills
+  font-family: 'ProximaNovaCond-Semibold'
+  padding: 5px 15px
+  margin-left: 5px
+  background-color: #3ba8c0
+  color: #fff
+  font-weight:bold
+  border-radius: 3px
+  line-height: 2.3
+  background-color: rgba(59,168,192,1)
+  // background: @include filter-gradient(#3ba8c0, #2e8da2, vertical);
+  // background: @include background-image(linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 50%, rgba(46,141,162,1) 51%, rgba(46,141,162,1) 100%));
+
+.experience
+  @extend .info
+  padding-bottom: 20px
+
+.exp_block
+  font-family: 'fira_sansbook'
+  font-size: 17px
+  line-height: 1
+
+.educ_block
+  @extend .exp_block
+
+.case
+  color: $title-color
+  font-size: 34px
+  padding-top: 10px
+  padding-left: 55px
+
+.date
+  font-family: 'fira_sanslight'
+  font-size: 15px
+  padding-bottom: 20px
+
+.education
+  @extend .info
+
+.footer
+  height: 80px
+  background-color: $main-bgc
+  width: 100%
+  position: relative
+
+.border-footer
+  @extend .border
+  top: 0
+.footer_block
+  margin: 28px auto
+  width: 400px
+  text-align: center
+  font-family: 'fira_sanslight'
+  font-size: 15px
+  
+.works
+  @extend .info
+
+.works_item
+  margin: 20px
+  height: 280px
+  p 
+    text-align: center
+    font-family: 'fira_sanslight'
+    font-size: 13px
+
+
+.img_block
+  height: 136px
+  width: 200px
+  border: 3px solid $main-blue
+  margin: 5px auto 15px
+
+  img
+    height: 130px
+    width: 200px
