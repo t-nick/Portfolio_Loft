@@ -54,7 +54,8 @@ body {
           border-radius: 5px;
   overflow: hidden; }
   .left-block li {
-    font-size: 21px; }
+    font-size: 21px;
+    margin-bottom: -2px; }
     .left-block li a {
       display: block;
       line-height: 52px;
@@ -62,17 +63,18 @@ body {
       height: 75px;
       -webkit-border-radius: 0;
               border-radius: 0;
-      padding-left: 25px; }
+      padding-left: 25px;
+      border-bottom: 3px solid #3ba8c0; }
       .left-block li a.active {
         background-color: #3ba8c0;
-        color: #fff; }
+        color: #fff;
+        border: 3px solid #3ba8c0; }
         .left-block li a.active:hover {
           background-color: #3ba8c0;
           color: #fff; }
       .left-block li a:hover {
         color: #3ba8c0;
         background-color: #eff3f7;
-        border-bottom: 3px solid #3ba8c0;
         -webkit-transition: 0.1s;
         transition: 0.1s; }
     .left-block li:last-child a {
@@ -104,7 +106,7 @@ body {
       padding-right: 15px;
       font-size: 21px; }
 
-.info, .experience, .education, .works {
+.info, .experience, .education, .works, .contact {
   background-color: #eff3f7;
   margin-bottom: 25px;
   -webkit-border-radius: 3px;
@@ -132,6 +134,7 @@ body {
 
 .description {
   margin-bottom: 30px;
+  margin-left: 15px;
   width: auto;
   font-family: 'fira_sansbook'; }
 
@@ -201,3 +204,9 @@ body {
   .img_block img {
     height: 130px;
     width: 200px; }
+
+.contact_title {
+  background-color: #48cbe8;
+  height: 120px;
+  text-align: center;
+  color: #fff; }

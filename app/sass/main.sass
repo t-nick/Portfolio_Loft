@@ -59,6 +59,7 @@ body
   overflow: hidden
   li 
     font-size: 21px
+    margin-bottom: -2px
     a 
       display: block
       line-height: 52px
@@ -66,11 +67,13 @@ body
       height: 75px
       border-radius: 0
       padding-left: 25px
+      border-bottom: 3px solid $main-blue
 
       
       &.active
         background-color: $main-blue
         color: $left-color-active
+        border: 3px solid $main-blue
         
         &:hover
           background-color: $main-blue
@@ -79,7 +82,7 @@ body
       &:hover
         color: $left-color-hover
         background-color: $main-bgc
-        border-bottom: 3px solid $main-blue
+        
         transition: 0.1s
     &:last-child a 
         border-bottom: none
@@ -133,6 +136,7 @@ body
   margin-left: 33px
 .description
   margin-bottom: 30px
+  margin-left: 15px
   width: auto
   font-family: 'fira_sansbook'
 .name
@@ -215,3 +219,13 @@ body
   img
     height: 130px
     width: 200px
+
+// contact
+.contact
+  @extend .info
+
+.contact_title
+  background-color: $tel-color 
+  height: 120px
+  text-align: center
+  color: #fff
